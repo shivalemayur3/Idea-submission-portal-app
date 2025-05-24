@@ -54,7 +54,7 @@ export function IdeasList() {
                     {paginatedIdeas.map((idea) => (
                         <li
                             key={idea.id}
-                            className="p-4 bg-white rounded shadow border flex justify-between items-start"
+                            className="p-4 bg-white rounded shadow border flex justify-between items-start hover:bg-gray-100"
                         >
                             <div className="flex-1">
                                 <Link href={`/idea/${idea.id}`} className="text-lg font-semibold text-blue-700 hover:underline">

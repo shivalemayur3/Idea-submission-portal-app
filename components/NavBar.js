@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import { Menu } from 'lucide-react';
 
 export default function NavBar() {
   const pathname = usePathname();
@@ -21,7 +22,7 @@ export default function NavBar() {
             onClick={toggleMenu}
             className="text-white focus:outline-none"
           >
-            ☰
+           <Menu className="w-6 h-6" />
           </button>
         </div>
         <div className={`sm:flex space-x-4 ${isOpen ? 'block' : 'hidden'} sm:block`}> 
